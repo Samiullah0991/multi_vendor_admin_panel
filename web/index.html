@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Uber Web Admin Panel - Flutter Firebase App">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="uber_web_admin_panel">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>uber_web_admin_panel</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Firebase JS SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration (update if needed)
+    const firebaseConfig = {
+      apiKey: "AIzaSyCfLhXARl8G8gjGxc3kS0kCG_-UoAu4BII",
+      authDomain: "sam-multi-store.firebaseapp.com",
+      projectId: "sam-multi-store",
+      storageBucket: "sam-multi-store.firebasestorage.app",
+      messagingSenderId: "52631389824",
+      appId: "1:52631389824:web:4ba75da5817f3b24a94865"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <!-- This script adds the Flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+
+<body>
+<script>
+  window.addEventListener('load', function (ev) {
+    // Download main.dart.js
+    _flutter.loader.loadEntrypoint({
+      serviceWorker: {
+        serviceWorkerVersion: null,
+      },
+      onEntrypointLoaded: function (engineInitializer) {
+        engineInitializer.initializeEngine().then(function (appRunner) {
+          appRunner.runApp();
+        });
+      }
+    });
+  });
+</script>
+</body>
+</html>
