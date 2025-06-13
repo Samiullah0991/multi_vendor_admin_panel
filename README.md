@@ -1,4 +1,4 @@
-# uber_web_admin_panel
+# Multivendor_web_admin_panel
 
 A new Flutter project.
 
